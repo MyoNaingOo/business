@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: business
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/business
+    username: ${MYSQL_USER:root}
+    password: ${MYSQL_PASSWORD:Mno2003}
+    driverClassName=com: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+
+my-user:
+  owner:
+   gmail: ${GMAIL:myonaingoo623@gmail.com}
+
+frontend:
+  url: ${FE:http://localhost:4200/}
+
+
+
+
+
+
